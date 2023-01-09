@@ -4,7 +4,8 @@ function capitalizeFirstLetter(string) {
 }
 const Alert = (props) => {
     const styleCss={
-        height:"50px"
+        height:"50px",
+        marginTop:"60px"
     }
     return (
         <div style={styleCss}>
