@@ -18,9 +18,9 @@ const Navbar = (props) => {
                             <li className="nav-item">
                                 <a className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" href="/">{props.home}</a>
                             </li>
-                            <li className="nav-item">
-                                <a className={`nav-link ${location.pathname === "/aout" ? "active" : ""}`} aria-current="page" href="/about">{props.about}</a>
-                            </li>
+//                             <li className="nav-item">
+//                                 <a className={`nav-link ${location.pathname === "/aout" ? "active" : ""}`} aria-current="page" href="/about">{props.about}</a>
+//                             </li>
                         </ul>
                         <div className="d-flex" role="search">
                             <img onClick={props.togglemode} style={{ height: "32px", width: "32px", backgroundColor: "white", borderRadius: "10px",marginRight:"10px" }} src={props.mode === "dark" ? "https://img.icons8.com/sf-black-filled/512/moon-symbol.png" : "https://img.icons8.com/sf-regular/512/moon-symbol.png"} alt="hhii" />
