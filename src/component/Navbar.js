@@ -1,5 +1,9 @@
 import React from 'react'
 // import { Link } from 'react-router-dom';
+
+let location = useLocation();
+    React.useEffect(() => {
+    }, [location]);
 const Navbar = (props) => {
     return (
         <div>
@@ -12,10 +16,10 @@ const Navbar = (props) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/">{props.home}</a>
+                                <a className={`nav-link ${location.pathname === "/" ? "active" : ""}`} aria-current="page" href="/">{props.home}</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/about">{props.about}</a>
+                                <a className={`nav-link ${location.pathname === "/aout" ? "active" : ""}`} aria-current="page" href="/about">{props.about}</a>
                             </li>
                         </ul>
                         <div className="d-flex" role="search">
